@@ -71,7 +71,7 @@ class App extends Component {
       },
     };
     this.setState({ authLoading: true });
-    fetch(`http://localhost:8080/graphql`, {
+    fetch(`https://fakebook-demo-rest-ap.herokuapp.com/graphql`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -134,7 +134,7 @@ class App extends Component {
         password: authData.signupForm.password.value,
       },
     };
-    fetch(`http://localhost:8080/graphql`, {
+    fetch(`https://fakebook-demo-rest-ap.herokuapp.com/graphql`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
